@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[FolderCompare.sln]
+SCC_Aux_Path = "\\tahoe\VSS\Denali"
+SCC_Project_Name = "$/Denali/Src/Managed Utilities/FolderCompare", MXIAAAAA
+
+[FolderCompare.vbproj]
+SCC_Aux_Path = "\\tahoe\VSS\Denali"
+SCC_Project_Name = "$/Denali/Src/Managed Utilities/FolderCompare", MXIAAAAA

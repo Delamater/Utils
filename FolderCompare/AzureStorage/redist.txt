@@ -1,0 +1,3 @@
+As per the Microsoft Windows Azure SDK EULA, the following assemblies can be redistributed:
+
+Microsoft.WindowsAzure.StorageClient.dll

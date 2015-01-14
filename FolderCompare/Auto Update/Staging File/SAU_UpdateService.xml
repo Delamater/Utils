@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SAU_UpdateService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <updateserviceuri>https://update.staging.sage.com/au/services/UpdateService</updateserviceuri>
+</SAU_UpdateService>

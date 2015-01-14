@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Mas500InstalledFiles" targetNamespace="http://tempuri.org/Mas500InstalledFiles.xsd" xmlns:mstns="http://tempuri.org/Mas500InstalledFiles.xsd" xmlns="http://tempuri.org/Mas500InstalledFiles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Mas500InstalledFiles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Mas500InstalledFiles" msprop:Generator_DataSetName="Mas500InstalledFiles" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FileInfo" msprop:Generator_UserTableName="FileInfo" msprop:Generator_RowDeletedName="FileInfoRowDeleted" msprop:Generator_RowChangedName="FileInfoRowChanged" msprop:Generator_RowClassName="FileInfoRow" msprop:Generator_RowChangingName="FileInfoRowChanging" msprop:Generator_RowEvArgName="FileInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="FileInfoRowChangeEventHandler" msprop:Generator_TableClassName="FileInfoDataTable" msprop:Generator_TableVarName="tableFileInfo" msprop:Generator_RowDeletingName="FileInfoRowDeleting" msprop:Generator_TablePropName="FileInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="CreationTimeUtc" msprop:Generator_UserColumnName="CreationTimeUtc" msprop:Generator_ColumnVarNameInTable="columnCreationTimeUtc" msprop:Generator_ColumnPropNameInRow="CreationTimeUtc" msprop:Generator_ColumnPropNameInTable="CreationTimeUtcColumn" type="xs:dateTime" />
+              <xs:element name="Extension" msprop:Generator_UserColumnName="Extension" msprop:Generator_ColumnVarNameInTable="columnExtension" msprop:Generator_ColumnPropNameInRow="Extension" msprop:Generator_ColumnPropNameInTable="ExtensionColumn" type="xs:string" />
+              <xs:element name="FullName" msprop:Generator_UserColumnName="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" type="xs:string" />
+              <xs:element name="LastAccessTimeUtc" msprop:Generator_UserColumnName="LastAccessTimeUtc" msprop:Generator_ColumnVarNameInTable="columnLastAccessTimeUtc" msprop:Generator_ColumnPropNameInRow="LastAccessTimeUtc" msprop:Generator_ColumnPropNameInTable="LastAccessTimeUtcColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+              <xs:element name="CRCValue" msprop:Generator_UserColumnName="CRCValue" msprop:Generator_ColumnVarNameInTable="columnCRCValue" msprop:Generator_ColumnPropNameInRow="CRCValue" msprop:Generator_ColumnPropNameInTable="CRCValueColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="myRowState" msprop:Generator_UserColumnName="myRowState" msprop:Generator_ColumnPropNameInRow="myRowState" msprop:Generator_ColumnVarNameInTable="columnmyRowState" msprop:Generator_ColumnPropNameInTable="myRowStateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FileInfo" />
+      <xs:field xpath="mstns:FullName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

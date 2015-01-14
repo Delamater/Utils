@@ -1,0 +1,1195 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sage.Ssdp.Security.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Sage.Ssdp.Security.Client.SignedZip">
+            <summary>
+            A signed zip file object - used to verify that a zip
+            file has been signed correctly
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.SetKeyStore(System.Security.Cryptography.X509Certificates.X509Store)">
+            <summary>
+            Sets the key store which contains the trusted CAs.
+            </summary>
+            <param name="ks"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.GetFile">
+            <summary>
+            Sets the key store which contains the trusted CAs.
+            Get the original file that has been signed.
+            </summary>
+            <returns>the file that was signed</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.GetFile(System.Int32,System.TimeSpan)">
+            <summary>
+            Sets the key store which contains the trusted CAs.
+            Get the original file that has been signed.
+            </summary>
+            <returns>the file that was signed</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.GetFileName">
+            <summary>
+            Get the name of the original file that has been signed.@throws Exception if the file cannot be verified
+            </summary>
+            <returns>the name of the file that was signed</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.SetOutputDirectory(System.String)">
+            <summary>
+            Set output directory.
+            </summary>
+            <param name="dir">the output directory.</param>
+            
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.Length">
+            <summary>
+            Returns the length of the signed file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedFile.SetPrincipalsSignature(System.String)">
+            <summary>
+            Set the principals signature to check
+            </summary>
+            <param name="sig"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.#ctor(ICSharpCode.SharpZipLib.Zip.ZipFile)">
+            <summary>
+             Note that the principals signature must be supplied before the file can be retrieved.
+            </summary>
+            <param name="zf"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.#ctor(ICSharpCode.SharpZipLib.Zip.ZipFile,System.String)">
+            <summary>
+            Create a signed zip file object, verifies that the file is signed correctly
+            with the passed signiture
+            </summary>
+            <param name="zf">file</param>
+            <param name="sig">signiture</param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.GetFile">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.GetFile(System.Int32,System.TimeSpan)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.GetFileName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.SetOutputDirectory(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dir"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.SetKeyStore(System.Security.Cryptography.X509Certificates.X509Store)">
+            <summary>
+            
+            </summary>
+            <param name="ks"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.SetPrincipalsSignature(System.String)">
+            <summary>
+            Set the principals signature. 
+            </summary>
+            <param name="sig"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.Length">
+            <summary>
+            ecurity.SignedFile#length()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.isAllowedCert(Org.BouncyCastle.X509.X509Certificate)">
+            <summary>
+             Returns true if the Certificate matches the signed version passed in
+            param cert the certificate
+            </summary>
+            <param name="cert"></param>
+            <returns>true if the Certificate matches the signed version passed in</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.IsTrustedCA(Org.BouncyCastle.X509.X509Certificate)">
+            <summary>
+             Returns true if the Certificate belongs to a trusted CA
+            </summary>
+            <param name="caCert">true if the Certificate belongs to a trusted CA</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.VerifyManifest(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.ReadFile(ICSharpCode.SharpZipLib.Zip.ZipEntry)">
+            <summary>
+            
+            </summary>
+            <param name="ze"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.ReadManifest(ICSharpCode.SharpZipLib.Zip.ZipEntry)">
+            <summary>
+            
+            </summary>
+            <param name="ze"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.ReadSignatureFile(ICSharpCode.SharpZipLib.Zip.ZipEntry)">
+            <summary>
+            
+            </summary>
+            <param name="ze"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SignedZip.ReadSignatureBlock(ICSharpCode.SharpZipLib.Zip.ZipEntry)">
+            <summary>
+            
+            </summary>
+            <param name="ze"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.AppInstall">
+            <summary>
+            Holds information about a product/installation environment on the system
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.IApplicationInstall">
+            <summary>
+            Holds information about a product/installation environment on the system
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.ProductId">
+            <summary>
+            The product id e.g. ssdp.test.testapp1
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.VersionId">
+            <summary>
+            The version number of the installed product
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.SdkVersion">
+            <summary>
+            The version number of the sdk
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.OS">
+            <summary>
+            The Short OS code e.g. Windows.6.1
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.DetailedOS">
+            <summary>
+            The detailed OS information including version and service pack
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.SerialNumber">
+            <summary>
+            The serial number of the installed product
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.ClientId">
+            <summary>
+            The client id/ customer account number
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.Locale">
+            <summary>
+            The locale short code e.g. en_GB or en_US see the SDK documentation 
+            for the recognised short codes for other locales
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IApplicationInstall.Attributes">
+            <summary>
+            Any additional attributes that may prove usefull for the project team
+            These can be used in reports
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.ProductId">
+            <summary>
+            The product id e.g. ssdp.test.testapp1
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.VersionId">
+            <summary>
+            The version number of the installed product
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.SdkVersion">
+            <summary>
+            The version number of the sdk
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.OS">
+            <summary>
+            The Short OS code e.g. Windows.6.1
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.DetailedOS">
+            <summary>
+            The detailed OS information including version and service pack
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.SerialNumber">
+            <summary>
+            The serial number of the installed product
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.ClientId">
+            <summary>
+            The client id / customer number
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.Locale">
+            <summary>
+            The locale short code e.g. en_GB or en_US see the SDK documentation 
+            for the recognised short codes for other locales
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AppInstall.Attributes">
+            <summary>
+            Any additional attributes that may prove useful for the project team
+            These can be used in reports
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.CheckForUpdatesResponse">
+            <summary>
+            Returned from the update server when a request for updates and feeds 
+            has been made.  Contains both updates and feeds.
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.ICheckForUpdateResponse">
+            <summary>
+            Returned from the update server when a request for updates and feeds 
+            has been made.  Contains both updates and feeds.
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ICheckForUpdateResponse.Updates">
+            <summary>
+            Any matching updates
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ICheckForUpdateResponse.Feeds">
+            <summary>
+            Any relevant feeds
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ICheckForUpdateResponse.CheckSuccessful">
+            <summary>
+            if the check for updates completed succesfully (no errors raised)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ICheckForUpdateResponse.CheckException">
+            <summary>
+            If an error occured during the check for updates process it will be stored here
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.CheckForUpdatesResponse.#ctor">
+            <summary>
+            creates a new response object
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.CheckForUpdatesResponse.#ctor(System.Exception)">
+            <summary>
+            creates a new response object where an exception has occured
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.CheckForUpdatesResponse.CheckSuccessful">
+            <summary>
+            if the check for updates completed succesfully (no errors raised)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.CheckForUpdatesResponse.CheckException">
+            <summary>
+            If an error occured during the check for updates process it will be stored here
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.CheckForUpdatesResponse.Feeds">
+            <summary>
+            Any feeds returned
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.CheckForUpdatesResponse.Updates">
+            <summary>
+            Any updates returned
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.AutoUpdateEvents">
+            <summary>
+            Events created by the autoupdate client
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.AutoUpdateEvents.ProgressUpdatedEventTarget">
+            <summary>
+            Download progress event 
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.AutoUpdateEvents.DownloadCompletedEventTarget">
+            <summary>
+            Download completed event
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.AutoUpdateEvents.LogMessageEventTarget">
+            <summary>
+            Log message event
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Attribute">
+            <summary>
+            Key/Value pair attribute holder
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.IAttribute">
+            <summary>
+            Key/Value pair attribute holder
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAttribute.Key">
+            <summary>
+            Key/Name of attribute
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAttribute.Value">
+            <summary>
+            value of attribute
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Attribute.Key">
+            <summary>
+            Attribute's key/name
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Attribute.Value">
+            <summary>
+            Attribute's value
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.SoftwareUpdateFile">
+            <summary>
+            Contains information about a single software update file
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.ISoftwareUpdate">
+            <summary>
+            Contains information about a single software update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.BundleName">
+            <summary>
+            the software bundle name
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.UpdateId">
+            <summary>
+            The id of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.ProductId">
+            <summary>
+            The product id the update relates to
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.VersionId">
+            <summary>
+            The version id the update will take the installed application to
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.UpdateTypeId">
+            <summary>
+            The update type id
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.FileName">
+            <summary>
+            The file name of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.FileLength">
+            <summary>
+            The size of the update file
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.MimeType">
+            <summary>
+            The mime type of the update file
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.FriendlyName">
+            <summary>
+            The user friendly name of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.Description">
+            <summary>
+            A localised description of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.Attributes">
+            <summary>
+            Any additional attributes relating to the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.ISoftwareUpdate.Dependencies">
+            <summary>
+            Any dependences the update has
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SoftwareUpdateFile.#ctor">
+            <summary>
+            create a default software update file
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.SoftwareUpdateFile.#ctor(System.String,Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate)">
+            <summary>
+            Creates a software update file from the software update information returned
+            from the SOAP call.
+            </summary>
+            <param name="bundleName">Software bundle name</param>
+            <param name="u">software update information</param>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.BundleName">
+            <summary>
+            the software bundle name
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.UpdateId">
+            <summary>
+            The id of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.ProductId">
+            <summary>
+            The product id the update relates to
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.VersionId">
+            <summary>
+            The version id the update will take the installed application to
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.UpdateTypeId">
+            <summary>
+            The update type id
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.FileName">
+            <summary>
+            The file name of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.FileLength">
+            <summary>
+            The size of the update file
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.MimeType">
+            <summary>
+            The mime type of the update file
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.FriendlyName">
+            <summary>
+            The user friendly name of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.Description">
+            <summary>
+            A localised description of the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.Attributes">
+            <summary>
+            Any additional attributes relating to the update
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.SoftwareUpdateFile.Dependencies">
+            <summary>
+            Any dependences the update has
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.EncodingHelper.StrToByteArray(System.String)">
+            <summary>
+            C# to convert a string to a byte array.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.EncodingHelper.ConvertToString(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytes_in"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.EncodingHelper.Encode(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="encbuff"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.EncodingHelper.Encode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.EncodingHelper.Decode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.CheckForUpdates(System.String,System.String)">
+            <summary>
+            Check for updates on the selected autoupdate server
+            using the product id and version only.
+            </summary>
+            <param name="productId">The product id of the installed product for example ssdp.test.app1</param>
+            <param name="versionId">The current version of teh installed product</param>
+            <returns>This returns an array of all updates found</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.CheckForUpdatesEx(Sage.Ssdp.Security.Client.IApplicationInstall)">
+            <summary>
+             Check for updates on the selected autoupdate server using
+             the application install object. 
+            </summary>
+            <param name="applicationInstall">Object containing information about the installed
+            product including any number of additional attributes</param>
+            <returns>An array of updates</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.DownloadUpdate(Sage.Ssdp.Security.Client.ISoftwareUpdate)">
+            <summary>
+            Start a download as a forground process
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.DownloadUpdateAsync(Sage.Ssdp.Security.Client.ISoftwareUpdate)">
+            <summary>
+            Start a download as a background process
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.CancelDownload(System.Int32)">
+            <summary>
+            cancel a download
+            </summary>
+            <param name="requestId">The request id returned when the 
+            download was started</param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.DownloadFileURI(Sage.Ssdp.Security.Client.ISoftwareUpdate)">
+            <summary>
+            The full download URI of the update so an external
+            tool such as BITS can be used to download it
+            </summary>
+            <param name="update">The software update</param>
+            <returns>The full URI of the software update</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.VerifyAndUnpack(Sage.Ssdp.Security.Client.ISoftwareUpdate,System.String)">
+            <summary>
+            If an external tool has been used to download a update 
+            this method MUST be used to verify and unpack the update before 
+            it can be installed.
+            </summary>
+            <param name="update">the update to check</param>
+            <param name="fullDownloadPath">the full file path of the update</param>
+            <returns>if the verify and unpack was successful this
+            will be an empty string - otherwise a message stating the issue
+            will be returned</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.CheckForUpdatesWithFeeds(System.String,System.String,System.DateTime)">
+            <summary>
+             Check for updates and feeds on the selected autoupdate server using
+             the product id and version.
+             the locale will be assumed to be en_GB. 
+             the OS information will be automatically determined.
+            </summary>
+            <param name="productId">The product id of the installed product for example ssdp.test.app1</param>
+            <param name="versionId">The current version of teh installed product</param>
+            <param name="date">The date to limit the feed check by - any updates created 
+            or modified before this date will not be displayed</param>
+            <returns>An object containing updates and feeds</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.IAutoUpdateService.CheckForUpdatesExWithFeeds(Sage.Ssdp.Security.Client.IApplicationInstall,System.DateTime)">
+            <summary>
+             Check for updates on the selected autoupdate server using
+             the application install object. 
+            </summary>
+            <param name="applicationInstall">Object containing information about the installed
+            product including any number of additional attributes</param>
+            <param name="date">The date to limit the feed check by - any updates created 
+            or modified before this date will not be displayed</param>
+            <returns>A response object containing An array of updates and an array of feeds</returns>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.UseProxy">
+            <summary>
+            If a proxy server is to be used
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.UseDefaultProxy">
+            <summary>
+            If the windows service default proxy is to be used
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.UseDefaultProxyCredentials">
+            <summary>
+            If the windows service default proxy credentials are
+            to be used - for authenticating proxies
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.ProxyAddress">
+            <summary>
+            The proxy address (if the default proxy is not to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.ProxyCredentialUsername">
+            <summary>
+            The proxy credential username (if default proxy credentials are not
+            to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.ProxyCredentialPassword">
+            <summary>
+            The proxy credential password (if default proxy credentials are not
+            to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.ProxyCredentialDomain">
+            <summary>
+            The proxy credential domain (if default proxy credentials are not
+            to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.UpdateServiceUri">
+            <summary>
+            The URI of the auto-update service to use
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.CheckTimeout">
+            <summary>
+            The time-out value in milliseconds for checking for updates
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.ConnectTimeout">
+            <summary>
+            The time-out value in milliseconds for connecting to the download server
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.DownloadActivityTimeout">
+            <summary>
+             The time-out value in milliseconds for download activity
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IAutoUpdateService.DownloadDir">
+            <summary>
+            The directory to which update are downloaded
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.IDependency">
+            <summary>
+            Dependancy required before an update can be installed
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IDependency.ProductId">
+            <summary>
+            The id of the product required e.g. ssdp.test.testapp1
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.IDependency.VersionId">
+            <summary>
+            The minimum version required e.g. 10.0.0.1
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.CallBackEventInterface">
+            <summary>
+            Used for handeling events
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.CallBackEventInterface.ProgressUpdated(System.Int32,Sage.Ssdp.Security.Client.ISoftwareUpdate,System.Int32,System.Int32,System.Boolean@)">
+            <summary>
+            Run when the download progress is updated
+            </summary>
+            <param name="requestId">the request id returned when the download was started</param>
+            <param name="update">the update the progress relates to</param>
+            <param name="progress">the percentage progress</param>
+            <param name="bytesReceived">the number of bytes received</param>
+            <param name="cancel">if teh download is in the process of being cancelled</param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.CallBackEventInterface.DownloadCompleted(System.Int32,Sage.Ssdp.Security.Client.ISoftwareUpdate,System.Boolean,System.String)">
+            <summary>
+            Run when a download task is complete 
+            </summary>
+            <param name="requestId">the request id returned when the download was started</param>
+            <param name="update">the update the progress relates to</param>
+            <param name="success">if the download was successful</param>
+            <param name="message">any messages relating to the download</param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.CallBackEventInterface.LogMessage(System.String)">
+            <summary>
+            Run when a log entry is created
+            </summary>
+            <param name="logMessage">The text of the log entry</param>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Dependency">
+            <summary>
+            Dependancy required before an update can be installed
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Dependency.ProductId">
+            <summary>
+            The id of the product required e.g. ssdp.test.testapp1
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Dependency.VersionId">
+            <summary>
+            The minimum version required e.g. 10.0.0.1
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12.CheckForUpdates(Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates)">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12.CheckForUpdatesAsync(Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates)">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12.CheckForUpdatesAsync(Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap12.CheckForUpdatesCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap">
+            <remarks/>
+            
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap.CheckForUpdates(Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates)">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap.CheckForUpdatesAsync(Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates)">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap.CheckForUpdatesAsync(Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateServiceSoap.CheckForUpdatesCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdates.oApplicationInstallation">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.ProductID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.VersionID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.SDKVersionID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.OS">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.DetailedOS">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.SerialNumber">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.ClientID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.Locale">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.ApplicationInstallation.Attributes">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Attribute">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Attribute.Key">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Attribute.Value">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Dependency">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Dependency.ProductID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Dependency.VersionID">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Verification">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Verification.Signature">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Verification.Signer">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Verification.CryptoAlgorithmType">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CryptoAlgorithmType">
+            <remarks/>
+            
+        </member>
+        <member name="F:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CryptoAlgorithmType.x509">
+            <remarks/>
+        </member>
+        <member name="F:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CryptoAlgorithmType.pgp">
+            <remarks/>
+        </member>
+        <member name="F:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CryptoAlgorithmType.md5">
+            <remarks/>
+        </member>
+        <member name="F:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CryptoAlgorithmType.sha1">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Link">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Link.URI">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.Link.IsSecured">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.FileName">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.FriendlyName">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.FileSize">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.FileSizeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.Description">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.DownloadLink">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.DownloadVerification">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.UpdateFile.Mimetype">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.UpdateID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.UpdateFile">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.ProductID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.VersionID">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.UpdateType">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.Attributes">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdate.Dependency">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdateBundle">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdateBundle.SoftwareUpdate">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.SoftwareUpdateBundle.Name">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdatesResponse">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdatesResponse.SoftwareUpdateBundle">
+            <remarks/>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdatesResponse.Attributes">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdatesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdatesCompletedEventArgs">
+            <remarks/>
+            
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.Sdk.CheckForUpdatesWS.CheckForUpdatesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.Logger">
+            <summary>
+            Represents the event log helper class.
+            </summary>
+        </member>
+        <member name="T:Sage.Ssdp.Security.Client.AutoUpdateClient">
+            <summary>
+            The auto-update client is the  tool for checking for 
+            updates and feeds, downloading and verifying the updates
+            </summary>
+        </member>
+        <member name="F:Sage.Ssdp.Security.Client.AutoUpdateClient.DEFAULT_DATE">
+            <summary>
+            Date to use if you want all feeds.
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.#ctor">
+            <summary>
+            Creates a new auto update client
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.Dispose">
+            <summary>
+            Disposes of componant
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.CheckForUpdates(System.String,System.String)">
+            <summary>
+            Check for updates on the selected autoupdate server
+            using the product id and version only.
+            the locale will be assumed to be en_GB and the OS information
+            will be automatically determined
+            </summary>
+            <param name="productId">The product id of the installed product for example ssdp.test.app1</param>
+            <param name="versionId">The current version of teh installed product</param>
+            <returns>This returns an array of all updates found</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.CheckForUpdatesEx(Sage.Ssdp.Security.Client.IApplicationInstall)">
+            <summary>
+             Check for updates on the selected autoupdate server using
+             the application install object. 
+             if the locale is not set it will be assumed to be en_GB 
+             if the OS information is not set the OS information
+             will be automatically determined.
+            </summary>
+            <param name="applicationInstall">Object containing information about the installed
+            product including any number of additional attributes</param>
+            <returns>An array of updates</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadUpdate(Sage.Ssdp.Security.Client.ISoftwareUpdate)">
+            <summary>
+            Start a download as a foreground process
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadUpdateAsync(Sage.Ssdp.Security.Client.ISoftwareUpdate)">
+            <summary>
+            Start a download with events raised from a background thread
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadFileURI(Sage.Ssdp.Security.Client.ISoftwareUpdate)">
+            <summary>
+            The full download URI of the update so an external
+            tool such as BITS can be used to download it
+            </summary>
+            <param name="update">The software update</param>
+            <returns>The full URI of the software update</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.VerifyAndUnpack(Sage.Ssdp.Security.Client.ISoftwareUpdate,System.String)">
+            <summary>
+            If an external tool has been used to download a update 
+            this method MUST be used to verify and unpack the update before 
+            it can be installed.
+            </summary>
+            <param name="update">the update to check</param>
+            <param name="fileName">the file name of the update within the download directory</param>
+            <returns>if the verify and unpack was successful this
+            will be an empty string - otherwise a message stating the issue
+            will be returned</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.CheckForUpdatesWithFeeds(System.String,System.String,System.DateTime)">
+            <summary>
+             Check for updates and feeds on the selected autoupdate server using
+             the product id and version.
+             the locale will be assumed to be en_GB. 
+             the OS information will be automatically determined.
+            </summary>
+            <param name="productId">The product id of the installed product for example ssdp.test.app1</param>
+            <param name="versionId">The current version of teh installed product</param>
+            <param name="date">The date to limit the feed check by - any updates created 
+            or modified before this date will not be displayed</param>
+            <returns>An object containing updates and feeds</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.CheckForUpdatesExWithFeeds(Sage.Ssdp.Security.Client.IApplicationInstall,System.DateTime)">
+            <summary>
+             Check for updates and feeds on the selected autoupdate server using
+             the application install object. 
+             if the locale is not set it will be assumed to be en_GB. 
+             if the OS information is not set the OS information.
+             will be automatically determined.
+            </summary>
+            <param name="applicationInstall">Object containing information about the installed
+            product including any number of additional attributes</param>
+            <param name="date">The date to limit the feed check by - any updates created 
+            or modified before this date will not be displayed</param>
+            <returns>An object containing updates and feeds</returns>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.CancelDownload(System.Int32)">
+            <summary>
+            Cancel an async download
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadUpdateInternal(Sage.Ssdp.Security.Client.ISoftwareUpdate,System.Boolean)">
+            <summary>
+            Start a download
+            </summary>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.OnDownloadCompleted(System.Int32,System.Boolean,System.String)">
+            <summary>
+            Handles events from the downloader
+            </summary>
+            <param name="requestId">request id od downlaod</param>
+            <param name="success">if the down was successful</param>
+            <param name="message">any message associated with the download</param>
+        </member>
+        <member name="M:Sage.Ssdp.Security.Client.AutoUpdateClient.OnProgressUpdated(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            handles downloader events
+            </summary>
+            <param name="requestId">request id of download</param>
+            <param name="progress">percent progress</param>
+            <param name="bytesReceived">number of bytes received</param>
+        </member>
+        <member name="E:Sage.Ssdp.Security.Client.AutoUpdateClient.ProgressUpdated">
+            <summary>
+            Download progress events
+            </summary>
+        </member>
+        <member name="E:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadCompleted">
+            <summary>
+            Download complete events (includes unsuccessful downloads)
+            </summary>
+        </member>
+        <member name="E:Sage.Ssdp.Security.Client.AutoUpdateClient.LogMessage">
+            <summary>
+            Log message events
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.UseProxy">
+            <summary>
+            If a proxy server is to be used
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.UseDefaultProxy">
+            <summary>
+            If the windows service default proxy is to be used
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.UseDefaultProxyCredentials">
+            <summary>
+            If the windows service default proxy credentials are
+            to be used - for authenticating proxies
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.ProxyAddress">
+            <summary>
+            The proxy address (if the default proxy is not to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.ProxyCredentialUsername">
+            <summary>
+            The proxy credential username (if default proxy credentials are not
+            to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.ProxyCredentialPassword">
+            <summary>
+            The proxy credential password (if default proxy credentials are not
+            to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.ProxyCredentialDomain">
+            <summary>
+            The proxy credential domain (if default proxy credentials are not
+            to be used)
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.UpdateServiceUri">
+            <summary>
+            The URI of the auto-update service to use
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.CheckTimeout">
+            <summary>
+            The time-out value in milliseconds for checking for updates
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.ConnectTimeout">
+            <summary>
+            The time-out value in milliseconds for connecting to the download server
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadActivityTimeout">
+            <summary>
+             The time-out value in milliseconds for download activity
+            </summary>
+        </member>
+        <member name="P:Sage.Ssdp.Security.Client.AutoUpdateClient.DownloadDir">
+            <summary>
+            The directory to which updates are downloaded
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,35 @@
+C:\Azure\MAS500State\MAS500State\bin\Debug\Accounting.Framework.AzureStorage.dll
+C:\Azure\MAS500State\MAS500State\bin\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Azure\MAS500State\MAS500State\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Azure\MAS500State\MAS500State\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Azure\MAS500State\MAS500State\obj\Debug\ResolveAssemblyReference.cache
+C:\Azure\MAS500State\MAS500State\obj\Debug\Accounting.Framework.AzureStorage.dll
+C:\Azure\MAS500State\MAS500State\obj\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Azure\MAS500State\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.dll
+C:\Azure\MAS500State\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Azure\MAS500State\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Azure\MAS500State\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Azure\MAS500State\AzureStorage\obj\Debug\ResolveAssemblyReference.cache
+C:\Azure\MAS500State\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.dll
+C:\Azure\MAS500State\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Azure\AzureStorage\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.dll
+C:\Azure\AzureStorage\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Azure\AzureStorage\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Azure\AzureStorage\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Azure\AzureStorage\AzureStorage\obj\Debug\ResolveAssemblyReference.cache
+C:\Azure\AzureStorage\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.dll
+C:\Azure\AzureStorage\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.dll
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\obj\Debug\ResolveAssemblyReference.cache
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.dll
+C:\Denali\Src\Managed Utilities\AzureStorage\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Denali\Src\Managed Utilities\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.dll
+C:\Denali\Src\Managed Utilities\AzureStorage\bin\Debug\Accounting.Framework.AzureStorage.pdb
+C:\Denali\Src\Managed Utilities\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Denali\Src\Managed Utilities\AzureStorage\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Denali\Src\Managed Utilities\AzureStorage\obj\Debug\ResolveAssemblyReference.cache
+C:\Denali\Src\Managed Utilities\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.dll
+C:\Denali\Src\Managed Utilities\AzureStorage\obj\Debug\Accounting.Framework.AzureStorage.pdb

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[RemoveEventLog.csproj]
+SCC_Aux_Path = "\\tahoe\VSS\Denali"
+SCC_Project_Name = "$/Denali/Src/Managed Utilities/RemoveEventLog", SBVCAAAA
+
+[RemoveEventLog.sln]
+SCC_Aux_Path = "\\tahoe\VSS\Denali"
+SCC_Project_Name = "$/Denali/Src/Managed Utilities/RemoveEventLog", SBVCAAAA

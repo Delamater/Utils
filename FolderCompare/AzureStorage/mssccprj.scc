@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[AzureStorage.csproj]
+SCC_Aux_Path = "\\tahoe\VSS\Denali"
+SCC_Project_Name = "$/Denali/Src/Managed Utilities/AzureStorage", MTPCAAAA
+
+[AzureStorage.sln]
+SCC_Aux_Path = "\\tahoe\VSS\Denali"
+SCC_Project_Name = "$/Denali/Src/Managed Utilities/AzureStorage", MTPCAAAA
