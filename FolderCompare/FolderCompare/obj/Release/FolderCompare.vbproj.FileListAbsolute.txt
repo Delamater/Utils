@@ -1,0 +1,6 @@
+E:\X3\WorkingFolder\GitHub\Utils\FolderCompare\FolderCompare\bin\Accounting.Application.CS.FolderCompare.exe.config
+E:\X3\WorkingFolder\GitHub\Utils\FolderCompare\FolderCompare\obj\Release\Accounting.Application.CS.frmAbout.resources
+E:\X3\WorkingFolder\GitHub\Utils\FolderCompare\FolderCompare\obj\Release\Accounting.Application.CS.frmAppSettings.resources
+E:\X3\WorkingFolder\GitHub\Utils\FolderCompare\FolderCompare\obj\Release\Accounting.Application.CS.frmProgramCompare.resources
+E:\X3\WorkingFolder\GitHub\Utils\FolderCompare\FolderCompare\obj\Release\Accounting.Application.CS.Resources.resources
+E:\X3\WorkingFolder\GitHub\Utils\FolderCompare\FolderCompare\obj\Release\FolderCompare.vbproj.GenerateResource.Cache
